@@ -1,0 +1,36 @@
+import unittest
+
+Logout = __import__("(EC) Logout")
+Edit_Customer = __import__("(EC) Edit Customer")
+Customer_Summary = __import__("(EC) Customer Summary")
+Delete_Customer = __import__("(EC) Delete Customer")
+Add_Product = __import__("(EC) Add Product")
+Edit_Product = __import__("(EC) Edit Product")
+Delete_Product = __import__("(EC) Delete Product")
+Add_Service = __import__("(EC) Add Service")
+Edit_Service = __import__("(EC) Edit Service")
+Delete_Service = __import__("(EC) Delete Service")
+Forgot_Password = __import__("(EC) Forgot Password")
+Register_Account = __import__("(EC) Register Account")
+Password_Change = __import__("(EC) Password Change")
+
+loader = unittest.TestLoader()
+suite = unittest.TestSuite()
+
+suite.addTests(loader.loadTestsFromModule(Logout))
+suite.addTests(loader.loadTestsFromModule(Edit_Customer))
+suite.addTests(loader.loadTestsFromModule(Customer_Summary))
+suite.addTests(loader.loadTestsFromModule(Delete_Customer))
+suite.addTests(loader.loadTestsFromModule(Add_Product))
+suite.addTests(loader.loadTestsFromModule(Edit_Product))
+suite.addTests(loader.loadTestsFromModule(Delete_Product))
+suite.addTests(loader.loadTestsFromModule(Add_Service))
+suite.addTests(loader.loadTestsFromModule(Edit_Service))
+suite.addTests(loader.loadTestsFromModule(Delete_Service))
+suite.addTests(loader.loadTestsFromModule(Forgot_Password))
+suite.addTests(loader.loadTestsFromModule(Register_Account))
+suite.addTests(loader.loadTestsFromModule(Password_Change))
+
+
+runner = unittest.TextTestRunner(verbosity=3)
+result = runner.run(suite)

@@ -23,11 +23,11 @@ class Blog_ATS(unittest.TestCase):
         elem.send_keys(Keys.RETURN)
         #driver.get("http://mavsystems.pythonanywhere.com/admin/")
         assert "Logged In"
-        time.sleep(2)
+        time.sleep(1)
         elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/div[2]/div/div/div/div/div[3]/div/div/p[2]/a").click()
-        time.sleep(3)
+        time.sleep(1)
         elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/div[3]/div/a/span").click()
-        time.sleep(3)
+        time.sleep(1)
 
 
         elem = driver.find_element_by_xpath("//*[@id=\"id_cust_name\"]/option[2]").click()
@@ -49,7 +49,7 @@ class Blog_ATS(unittest.TestCase):
         elem.send_keys("6")
 
         elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/form/button").click()
-        time.sleep(4)
+        time.sleep(1)
 
 
 

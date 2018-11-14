@@ -24,8 +24,10 @@ class Blog_ATS(unittest.TestCase):
 
         assert "Logged In"
         time.sleep(2)
-        elem = driver.find_element_by_xpath("").click()
-        time.sleep(3)
+        elem = driver.find_element_by_xpath("//*[@id=\"myNavbar\"]/ul[2]/li/a/span").click()
+        time.sleep(2)
+        elem = driver.find_element_by_xpath("//*[@id=\"myNavbar\"]/ul[2]/li/ul/li/a").click()
+        time.sleep(2)
 
 
 

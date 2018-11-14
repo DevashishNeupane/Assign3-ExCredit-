@@ -23,11 +23,11 @@ class Blog_ATS(unittest.TestCase):
         elem.send_keys(Keys.RETURN)
         #driver.get("http://mavsystems.pythonanywhere.com/admin/")
         assert "Logged In"
-        time.sleep(2)
+        time.sleep(1)
         elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/div[2]/div/div/div/div/div[1]/div/div/p[2]/a").click()
-        time.sleep(3)
+        time.sleep(1)
         elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/div[3]/table/tbody/tr[1]/td[14]/a").click()
-        time.sleep(5)
+        time.sleep(1)
 
 
     def tearDown(self):

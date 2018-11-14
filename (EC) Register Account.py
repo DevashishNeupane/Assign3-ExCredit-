@@ -30,10 +30,10 @@ class Blog_ATS(unittest.TestCase):
         elem.send_keys("theBrady@gmail.com")
 
         elem = driver.find_element_by_id("id_password")
-        elem.send_keys("america")
+        elem.send_keys("oklahomacity7")
 
         elem = driver.find_element_by_id("id_password2")
-        elem.send_keys("america")
+        elem.send_keys("oklahomacity7")
 
         elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/form/p[6]/input").click()
         time.sleep(2)
