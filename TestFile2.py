@@ -1,7 +1,7 @@
 import unittest
 
-Product_Info = __import__("Product_Info")
-Service_Info = __import__("Service_Info")
+Product_Info = __import__("(EC) Product CSV")
+Service_Info = __import__("(EC) Service CSV")
 
 
 loader = unittest.TestLoader()
