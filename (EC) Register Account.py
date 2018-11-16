@@ -45,7 +45,7 @@ class Blog_ATS(unittest.TestCase):
         elem.send_keys("Tomz")
 
         elem = driver.find_element_by_id("id_password")
-        elem.send_keys("america")
+        elem.send_keys("oklahomacity7")
 
         elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/form/input[2]").click()
 

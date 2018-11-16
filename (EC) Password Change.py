@@ -9,8 +9,8 @@ class Blog_ATS(unittest.TestCase):
         self.driver = webdriver.Chrome()
 
     def test_blog(self):
-        user = "instructor"
-        pwd = "instructor1a"
+        user = "Michael"
+        pwd = "oklahoma7"
         driver = self.driver
         #driver.maximize_window()
         driver.get("http://devashish77.pythonanywhere.com/home/")
@@ -30,16 +30,19 @@ class Blog_ATS(unittest.TestCase):
         time.sleep(5)
 
         elem = driver.find_element_by_id("id_old_password")
-        elem.send_keys("tomethegreat")
+        elem.send_keys("oklahoma7")
+        time.sleep(2)
 
-        elem = driver.find_element_by_id("id_new_password")
-        elem.send_keys("tomethegreat")
+        elem = driver.find_element_by_id("id_new_password1")
+        elem.send_keys("oklahomacitythunder1")
+        time.sleep(2)
 
         elem = driver.find_element_by_id("id_new_password2")
-        elem.send_keys("tommythegreat222")
+        elem.send_keys("oklahomacitythunder1")
+        time.sleep(2)
 
         elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/form/p[5]/input").click()
-        time.sleep(5)
+        time.sleep(2)
 
 
     def tearDown(self):
