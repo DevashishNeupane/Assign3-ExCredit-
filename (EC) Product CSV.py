@@ -26,32 +26,34 @@ def insert_values():
     time.sleep(2)
     elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/div[2]/div/div/div/div/div[3]/div/div/p[2]/a").click()
     time.sleep(3)
-    elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/div[3]/div/a/span").click()
-    time.sleep(3)
+    #elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/div[3]/div/a/span").click()
+    #time.sleep(3)
 
     for i in range(0, len(my_list)):
+        elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/div[3]/div/a/span").click()
+        time.sleep(3)
         product = my_list[i][0]
         description = my_list[i][1]
         quantity = my_list[i][2]
         charge = my_list[i][3]
 
 
-    elem = driver.find_element_by_xpath("//*[@id=\"id_cust_name\"]/option[2]").click()
+        elem = driver.find_element_by_xpath("//*[@id=\"id_cust_name\"]/option[2]").click()
 
-    elem = driver.find_element_by_id("id_product")
-    elem.send_keys(product)
+        elem = driver.find_element_by_id("id_product")
+        elem.send_keys(product)
 
-    elem = driver.find_element_by_id("id_p_description")
-    elem.send_keys(description)
+        elem = driver.find_element_by_id("id_p_description")
+        elem.send_keys(description)
 
-    elem = driver.find_element_by_id("id_quantity")
-    elem.send_keys(quantity)
+        elem = driver.find_element_by_id("id_quantity")
+        elem.send_keys(quantity)
 
-    elem = driver.find_element_by_id("id_charge")
-    elem.send_keys(charge)
+        elem = driver.find_element_by_id("id_charge")
+        elem.send_keys(charge)
 
-    elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/form/button").click()
-    time.sleep(4)
+        elem = driver.find_element_by_xpath("//*[@id=\"app-layout\"]/div/div/div/form/button").click()
+        time.sleep(4)
 
 
 
